@@ -10,3 +10,7 @@ El juego se ejecuta utilizando Python3, bastan con hacer:
 > python3 game.py
 
 ## ¿Como se juega?
+Te mueves con las teclas A y D izquierda y derecha respectivamente y saltas con la tecla de flecha hacia Arriba.
+Pierdes si te caes 3 veces, ganas si consigues llegar hasta la bandera.
+
+Cada caida eliminará bloques lo que hará más complicado llegar a la meta.
