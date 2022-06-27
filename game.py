@@ -57,6 +57,9 @@ grass_sounds[1].set_volume(0.2)
 damage_sound = pygame.mixer.Sound('data/sounds/present.wav')
 damage_sound.set_volume(0.3)
 
+fanfare_sound = pygame.mixer.Sound( 'data/sounds/fanfare.wav' )
+fanfare_sound.set_volume(0.3)
+
 pygame.mixer.music.load('data/sounds/Noise.wav')
 pygame.mixer.music.play(-1) #how many times it plays after the first play; -1 to play in loop, 0 just once
 
@@ -365,6 +368,7 @@ while GAME_ON:  # Loop del Juego
 
         if player_rect.x >= flag_pos - 15 and player_rect.x <= flag_pos + 15:
             print( "Ganaste" )
+            fanfare_sound.play()
             win = True
             while( win ):
                 for event in pygame.event.get():  # Evento Loop
