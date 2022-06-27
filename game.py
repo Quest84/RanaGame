@@ -278,7 +278,7 @@ while GAME_ON:  # Loop del Juego
 
     if  player_rect.y >= 200:
         #damage_sound.play()
-        removeTiles(100)
+        removeTiles(300)
         player_rect.x = position_fall[0]
         player_rect.y = position_fall[1]-30
         air_timer = 0
