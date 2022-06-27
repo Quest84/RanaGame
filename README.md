@@ -18,3 +18,6 @@ Pierdes si te caes 3 veces, ganas si consigues llegar hasta la bandera.
 Cada caida eliminará bloques lo que hará más complicado llegar a la meta.
 
 ![Bandera de victoria](https://github.com/Quest84/RanaGame/blob/master/data/images/bandera.png?raw=true)
+
+## Tip del juego
+Puedes saltar dos veces seguidas, incluso puedes saltar un poco después de una caída (Coyote Time).
