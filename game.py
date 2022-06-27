@@ -274,7 +274,7 @@ while GAME_ON:  # Loop del Juego
         
 
     if  player_rect.y >= 200:
-        damage_sound.play()
+        #damage_sound.play()
         removeTiles(100)
         player_rect.x = position_fall[0]
         player_rect.y = position_fall[1]-30
@@ -314,14 +314,15 @@ while GAME_ON:  # Loop del Juego
         if event.type == KEYDOWN:
             if event.key == K_z:
                 removeTiles( 100 )
-            if event.key == K_w:
-                pygame.mixer.music.fadeout(1000)
-            if event.key == K_e:
-                pygame.mixer.music.play(-1)
-            if event.key == K_RIGHT:
+            #if event.key == K_w:
+                #pygame.mixer.music.fadeout(1000)
+
+            #if event.key == K_e:
+                #pygame.mixer.music.play(-1)
+            if event.key == K_d:
                 moving_right = True
                 #print('right')
-            if event.key == K_LEFT:
+            if event.key == K_a:
                 #print('left')
                 moving_left = True
             if event.key == K_UP:
@@ -335,15 +336,16 @@ while GAME_ON:  # Loop del Juego
                 sys.exit()
 
         if event.type == KEYUP:
-            if event.key == K_RIGHT:
+            if event.key == K_d:
                 moving_right = False
-            if event.key == K_LEFT:
+            if event.key == K_a:
                 moving_left = False
         
         #print(death_count)
 
         if death_count >= 3:
             print( "Perdiste" )
+            damage_sound.play()
             lose = True
             while( lose ):
                 for event in pygame.event.get():  # Evento Loop
